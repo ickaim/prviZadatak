@@ -1,0 +1,278 @@
+body{
+
+    background-image: url("../pictures/component.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.flex{
+    width: 60%;
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Regular;
+    src: url("../Font/PlayfairDisplay-Regular.woff");
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url("../Font/Roboto-Light.woff");
+}
+
+@font-face {
+    font-family: Roboto-MediumItalic;
+    src: url("../Font/Roboto-MediumItalic.woff");
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url("../Font/Roboto-Medium.woff");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../Font/Roboto-Bold.woff");
+}
+
+.flex .naslov{
+    letter-spacing: 0;
+    color: #505050;
+    font-size: 36px;
+    font-family: PlayfairDisplay-Regular;
+}
+
+.flex .p1{
+    letter-spacing: 0;
+    color: #505050;
+    font-size: 32px;
+    font-family: Roboto-Light;
+}
+
+.flex .p2{
+    font-size: 24px;
+    font-family: Roboto-Light;
+    margin-top: 20px;
+}
+
+strong{
+    font-family: Roboto-MediumItalic;
+}
+
+span{
+    color: #00B8B0;
+}
+
+#forma{
+    width: 30%;
+    margin-top: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 14px #00000022;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+.glavni{
+    height: 620px;
+}
+
+/*#f{
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+#f .naziv{
+    margin-left: -91px;
+}
+
+#f .kontakt{
+    margin-left: -74px;
+}
+
+#f .email{
+    margin-left: -126px;
+}
+
+#f .broj{
+    margin-left: -81px;
+}
+
+#f .website{
+    margin-left: -113px;
+
+}*/
+
+#forma label{
+    text-align: left;
+    letter-spacing: 0;
+    color: #505050;
+    font-size: 18px;
+    font-family: Roboto-Light;
+}
+
+
+#forma input{
+    padding-left: 30px;
+    letter-spacing: 0;
+    color: #505050;
+    width: 75%;
+    height: 40px;
+    border: 1px solid #DADADA;
+    border-radius: 3px;
+    opacity: 1;
+    font-size: 18px;
+    font-family: Roboto-Medium;
+}
+
+input:focus {
+    outline: 2px auto #00B8B0;
+    outline-offset: -2px;
+}
+
+#forma button{
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity:1;
+    font-size: 13px;
+    background: #00B8B0 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    margin-top: -18px;
+    padding: 5%;
+    font-family: Roboto-Bold;
+
+}
+
+#forma button:hover , button:active{
+    background-color: mediumpurple;
+}
+
+
+footer{
+    width: 93%;
+    text-align: right;
+    margin-top: 40px;
+}
+
+
+
+footer img:hover{
+    opacity: .5;
+    height: 30px;
+    padding-left: 5px;
+}
+
+footer img:active{
+    opacity:5;
+}
+
+@media  only screen and (max-width:600px) {
+
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+
+    }
+
+    .flex .naslov{
+        font-size: 15px;
+    }
+
+    .flex .p1{
+        font-size: 13px;
+    }
+    .flex .p2{
+        font-size: 13px;
+    }
+
+    .flex {
+        width: 90%;
+        margin: auto;
+    }
+
+    .glavni{
+        height: auto;
+    }
+
+    #forma {
+        text-align: left;
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    #forma label{
+        font-size: 15px;
+    }
+
+    #forma input{
+        width: 85%;
+        margin: auto;
+        font-size: 13px;
+    }
+
+    footer{
+        margin-bottom: 30px ;
+    }
+}
+
+
+@media only screen and (min-width: 533px) and (max-width: 800px){
+    .container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+
+    }
+
+    .flex .naslov{
+        font-size: 17px;
+    }
+
+    .flex .p1{
+        font-size: 15px;
+    }
+    .flex .p2{
+        font-size: 15px;
+    }
+
+    .glavni{
+        height: auto;
+    }
+    .flex {
+        width: 90%;
+        margin: auto;
+    }
+
+    #forma{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #forma input{
+        width: 85%;
+        margin: auto;
+        font-size: 13px;
+    }
+
+    footer{
+        margin-bottom: 30px ;
+    }
+
+    #forma button{
+        padding: 3%;
+    }
+
+}
