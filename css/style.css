@@ -19,6 +19,7 @@ body{
     width: 50%;
     margin-left: auto;
 }
+/* ucitavanje fonta neka ti uvijek ide prvo */
 
 @font-face {
     font-family: PlayfairDisplay-Regular;
@@ -167,6 +168,8 @@ input:focus {
     margin-right: 18%;
 }
 
+/* obrati paznju na rastojanje buttona u odnosu na input i donjeg bordera forme  */
+
 #forma button:hover , button:active{
     background-color: mediumpurple;
 }
@@ -185,7 +188,7 @@ footer{
     margin-left: 15px;
 }
 
-
+/* obrati paznju da su ikonice i forma na istom rastojanju od desne strane, stavi na oboje isti % rastojanje  */
 
 footer img:hover{
     opacity: .5;
